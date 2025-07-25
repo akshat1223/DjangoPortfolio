@@ -1,0 +1,6 @@
+This is your test wefuigdcihoudsxz
+<link rel="stylesheet" href={%static "style.css" %} />
+I am a recent Computer Science B.Tech graduate from Dr. A.P.J.
+                Abdul Kalam Technical University (AKTU). My passion lies in
+                Software development, Backend development and Data Scientist
+                overall i am a python developer python is my main tech stack.

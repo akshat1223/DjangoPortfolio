@@ -1,0 +1,13 @@
+# render.yaml
+services:
+  - type: static_site # Changed from 'web'
+    name: akshat-portfolio-static # Choose a unique name for your static site
+    buildCommand: "pip install -r requirements.txt && python manage.py collectstatic --noinput"
+    staticPublishPath: "staticfiles" # This tells Render where your static files are located
+    envVars:
+      # Environment variables like SECRET_KEY, DATABASE_URL, DEBUG, ALLOWED_HOSTS are not needed for static_site
+      # You can remove them or keep them if you plan to switch back to web service type later.
+      - key: DEBUG # Still good practice to explicitly set
+        value: "False"
+    autoDeploy: true
+  
